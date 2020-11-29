@@ -13,21 +13,21 @@
    'is-success': success,
   'is-warning' : warning,
   'is-danger' : danger,
-  'is-small': small,
+  'is-small is-light': small,
   'is-normal' : normal,
   'is-large' : large,
-  'is-outlined': outlined,
-  'is-inverted' : inverted,
-  'is-hover' : hover,
-  'is-focus': focus,
+  'is-outlined is-primary': outlined,
+  'is-inverted is-danger is-outlined' : inverted,
+  'is-hovered is-warning' : hovered,
+  'is-focused is-success': focused,
   'is-active' : active,
-  'is-loadning' : loading,
-   'is-disabled': disabled,
-  'is-fullwidth' : fullwidth,
-  'is-rounded' : rounded,
+  'is-loading is-primary' : loading,
+  'is-fullwidth is-warning' : fullwidth,
+  'is-rounded is-danger' : rounded,
   'has-addons' : addons,
 }"><slot></slot>
   </div>
+
 </template>
 
 <script>
@@ -52,8 +52,8 @@ export default {
     outlined: Boolean,
     inverted: Boolean,
     rounded: Boolean,
-    hover: Boolean,
-    focus: Boolean,
+    hovered: Boolean,
+    focused: Boolean,
     active: Boolean,
     loading: Boolean,
     disabled: Boolean,
